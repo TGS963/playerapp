@@ -1,0 +1,45 @@
+.time-stuff{
+    width: 50%;
+    display: flex;
+    p {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    input {
+        width: 200%; /* Full-width */
+        outline: none; /* Remove outline */
+    
+    }
+}
+
+.player{
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls{
+    width: 30%;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    svg {
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .time-stuff {
+        width: 100%;
+    }
+    .controls {
+        width: 80%;
+    }
+}
